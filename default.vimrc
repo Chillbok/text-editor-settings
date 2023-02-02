@@ -81,7 +81,7 @@ call vundle#begin()
 	" html:5 --> <CTRL>+<Y> -->  <,>: html form automatically completed
 	Plugin 'alvan/vim-closetag'
 	" automatically close tag
-	Plugin 'scroloose/nerdtree'
+	Plugin 'preservim/nerdtree'
 	" show directory(:NERDTree)
 call vundle#end()
 filetype plugin indent on	" required!
@@ -100,4 +100,4 @@ filetype plugin indent on	" required!
 "-------------------------------------------------------
 imap <expr> <tab> emmet#expandAbbrIntelligent("<tab>")
 map <F3> <ESC>:bp<CR>
-map <F4> <ESC>:bn<cr>
+map <F4> <ESC>:bn<CR>
