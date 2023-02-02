@@ -81,7 +81,7 @@ call vundle#begin()
 	" html:5 --> <CTRL>+<Y> -->  <,>: html form automatically completed
 	Plugin 'alvan/vim-closetag'
 	" automatically close tag
-	Plugin 'scrolloose/nerdtree'
+	Plugin 'scroloose/nerdtree'
 	" show directory(:NERDTree)
 call vundle#end()
 filetype plugin indent on	" required!
