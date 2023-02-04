@@ -83,6 +83,12 @@ call vundle#begin()
 	" automatically close tag
 	Plugin 'preservim/nerdtree'
 	" show directory(:NERDTree)
+	Plugin 'rust-lang/rust.vim'
+	" provides Rust file detection
+	" - syntax highlighting
+	" - formatting
+	" - Syntastic integration
+	" - and more
 call vundle#end()
 filetype plugin indent on	" required!
 		" Brief help
