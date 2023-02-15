@@ -89,6 +89,8 @@ call vundle#begin()
 	" - formatting
 	" - Syntastic integration
 	" - and more
+	Plugin 'dhruvasagar/vim-marp'
+	Plugin 'iamcco/markdown-preview.nvim'
 call vundle#end()
 filetype plugin indent on	" required!
 		" Brief help
