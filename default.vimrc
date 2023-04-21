@@ -11,9 +11,9 @@ set si
 set hlsearch
 set autoindent	" automatically indent
 set cindent	" c type indent
-set ts=4	" how much spaces to show '\t' of document
-set sts=4	" how much spaces to show of <TAB> key
-set shiftwidth=4	" space value of auto indent
+set ts=2	" how much spaces to show '\t' of document
+set sts=2	" how much spaces to show of <TAB> key
+set shiftwidth=2	" space value of auto indent
 set showmatch	" highlight matching '()'
 set laststatus=2	" 0(nothing), 1(show when window is more than 2), 2(always show)
 set backspace=eol,start,indent	" backspace to upper line when use backspace on line of end, start, indent
