@@ -91,6 +91,7 @@ call vundle#begin()
 	" - and more
 	Plugin 'dhruvasagar/vim-marp'
 	Plugin 'iamcco/markdown-preview.nvim'
+	Plugin 'LnL7/vim-nix'
 call vundle#end()
 filetype plugin indent on	" required!
 		" Brief help
