@@ -69,7 +69,7 @@ call vundle#begin()
 					" - formatting
 					" - Syntastic integration
 					" - and more
-	Plugin 'dhruasagar/vim-marp'
+	Plugin 'dhruvasagar/vim-marp'
 	Plugin 'ycm-core/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on	" required!
