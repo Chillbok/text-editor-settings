@@ -1,0 +1,65 @@
+* emacs 설정
+** 자동 줄바꿈
+#+begin_src emacs-lisp
+  (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
+  (global-visual-line-mode t)
+#+end_src
+
+* 패키지 설정
+** MELPA 저장소 추가
+#+begin_src emacs-lisp
+  (require 'package)
+  (add-to-list 'package-archives
+	       '("melpa" . "https://melpa.org/packages/") t)
+  (package-initialize)
+#+end_src
+
+** use-package 설치
+#+begin_src emacs-lisp
+  (unless (package-installed-p 'use-package)
+    (package-refresh-contents)
+    (package-install 'use-package))
+#+end_src
+
+* 테마 설정
+** timu-caribbean-theme
+#+begin_src emacs-lisp
+  (use-package timu-caribbean-theme
+    :ensure t
+    :config
+    (load-theme 'timu-caribbean t))
+#+end_src
+
+* org-roam 설정
+** org-roam 설치
+#+begin_src emacs-lisp
+  (use-package org-roam
+    :ensure t
+    :init
+    (setq org-roam-v2-ack t)
+    :config
+    (org-roam-db-autosync-enable)
+    (org-roam-setup))
+#+end_src
+
+** org-roam 디렉토리 설정
+#+begin_src emacs-lisp
+  (setq org-roam-directory "~/org-roam-chillbok/org-roam")
+#+end_src
+
+** org-roam-ui 설치
+#+begin_src emacs-lisp
+  (use-package org-roam-ui
+    :straight
+    (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out"))
+    :after org-roam
+    ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+    ;;         a hookable mode anymore, you're advised to pick something yourself
+    ;;         if you don't care about startup time, use
+    ;;  :hook (after-init . org-roam-ui-mode)
+    :config
+    (setq org-roam-ui-sync-theme t
+	  org-roam-ui-follow t
+	  org-roam-ui-update-on-save t
+	  org-roam-ui-open-on-start t))
+#+end_src
