@@ -21,6 +21,39 @@
     (package-install 'use-package))
 #+end_src
 
+* 아래에 패키지 설치 (use-package 사용)
+#+begin_src emacs-lisp
+  ;; use-package 필요
+  (require 'use-package)
+#+end_src
+
+** ivy 설치
+#+begin_src emacs-lisp
+  (use-package ivy
+    :ensure t
+    :config
+    (ivy-mode 1))
+#+end_src
+
+** counsel 설치
+#+begin_src emacs-lisp
+  (use-package counsel
+    :ensure t
+    :bind
+    (("M-x" . counsel-M-x)
+     ("C-x C-f" . counsel-find-file)
+     ("C-x b" . counsel-switch-buffer)))
+#+end_src
+
+** swiper 설치
+#+begin_src emacs-lisp
+  (use-package swiper
+    :ensure t
+    :bind
+    (("C-s" . swiper)
+     ("C-r" . swiper)))
+#+end_src
+
 * 테마 설정
 ** timu-caribbean-theme
 #+begin_src emacs-lisp
@@ -45,21 +78,4 @@
 ** org-roam 디렉토리 설정
 #+begin_src emacs-lisp
   (setq org-roam-directory "~/org-roam-chillbok/org-roam")
-#+end_src
-
-** org-roam-ui 설치
-#+begin_src emacs-lisp
-  (use-package org-roam-ui
-    :straight
-    (:host github :repo "org-roam/org-roam-ui" :branch "main" :files ("*.el" "out"))
-    :after org-roam
-    ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
-    ;;         a hookable mode anymore, you're advised to pick something yourself
-    ;;         if you don't care about startup time, use
-    ;;  :hook (after-init . org-roam-ui-mode)
-    :config
-    (setq org-roam-ui-sync-theme t
-	  org-roam-ui-follow t
-	  org-roam-ui-update-on-save t
-	  org-roam-ui-open-on-start t))
 #+end_src
