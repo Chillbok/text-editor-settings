@@ -4,7 +4,7 @@ neofetch
 # Reload-*: 특정 파일 다시 로딩
 # Modify-*: 특정 파일 수정
 # Cd-*: 특정 파일로 이동
-# Macro-*: 명령어 모음집 실행
+# Auto-*: 명령어 모음집 실행
 
 function Modify-Vimrc { # _vimrc 수정하기
 	vim "C:\Program Files\Vim\_vimrc"
@@ -35,10 +35,11 @@ function Cd-LogseqDirectory { # Logseq github 리포지토리 열고, git 상태
 }
 
 function Cd-Repositories { # github 리포지토리 폴더 열기
-	cd $HOME\Repositories
+	cd $HOME\Repositories 
+	ls
 }
 
-function Macro-Commit { # 자동으로 commit하고 push까지 시키는 명령어
+function Auto-Commit { # 자동으로 commit하고 push까지 시키는 명령어
 	git add *
 	git commit -m "Auto-Commited From Windows 11"
 	git push
