@@ -39,10 +39,10 @@ set si
 set hlsearch
 set autoindent
 set cindent
-set ts=4
-set sts=4
-set shiftwidth=4
-set laststatus=4
+set ts=2
+set sts=2
+set shiftwidth=2
+set laststatus=2
 set backspace=eol,start,indent
 set autowrite
 set autoread
