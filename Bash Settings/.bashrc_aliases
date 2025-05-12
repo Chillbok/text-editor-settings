@@ -1,0 +1,7 @@
+# 직접 만든 커스텀 bash 명령어들을 여기 적는다.
+# 기본 .bashrc 맨 아랫줄에 다음 명령어 추가: source ~/Repositories/text-editor-settings/.bashrc_aliases
+# 명령어 작성 방식: alias 명령어='실행할 bash 명령어'
+
+alias update-all='sudo dnf update' # 업데이트 하는 명령어
+alias commit='git add . && git commit' # 커밋 작성 명령어 일일히 치기 귀찮을 때(변경 내용 전부 stage하고 커밋 창 열기)
+alias fetch='git fetch && git pull' # git 업데이트 내용 동기화하고 원격 저장소 업데이트 내용 불러오기
