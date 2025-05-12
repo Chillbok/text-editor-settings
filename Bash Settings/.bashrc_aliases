@@ -1,5 +1,5 @@
 # 직접 만든 커스텀 bash 명령어들을 여기 적는다.
-# 기본 .bashrc 맨 아랫줄에 다음 명령어 추가: source ~/Repositories/text-editor-settings/.bashrc_aliases
+# 기본 .bashrc 맨 아랫줄에 다음 명령어 추가: source ~/Repositories/text-editor-settings/'Bash Settings'/.bashrc_aliases
 # 명령어 작성 방식: alias 명령어='실행할 bash 명령어'
 
 alias update-all='sudo dnf update' # 업데이트 하는 명령어
