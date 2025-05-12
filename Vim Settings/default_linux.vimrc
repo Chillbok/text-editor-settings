@@ -1,3 +1,5 @@
+" ~/Repositories/text-editor-settings/Vim\ Settings/default_linux.vimrc
+" 위 폴더 내용 source 명령어로 .vimrc 명령어에 추가
 " ==========================================
 " CLIPBOARD SETTINGS
 set clipboard=unnamedplus
@@ -70,7 +72,6 @@ call vundle#begin()
 					" - Syntastic integration
 					" - and more
 	Plugin 'dhruvasagar/vim-marp'
-	Plugin 'ycm-core/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on	" required!
 		" Brief help
