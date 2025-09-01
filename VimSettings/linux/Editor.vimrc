@@ -1,0 +1,13 @@
+set ignorecase
+set si
+set hlsearch
+set autoindent
+set cindent
+set ts=4
+set sts=4
+set shiftwidth=4
+set laststatus=4
+set backspace=eol,start,indent
+set autowrite
+set autoread
+set incsearch

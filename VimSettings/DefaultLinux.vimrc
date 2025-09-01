@@ -1,25 +1,11 @@
 " $HOME/Repositories/text-editor-settings/VimSettings/DefaultLinux.vimrc
 " 위 폴더 내용 source 명령어로 .vimrc 명령어에 추가
-" ==========================================
+
 " CLIPBOARD SETTINGS
-set clipboard=unnamedplus
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/Clipboard.vimrc
 
-
-" ==========================================
 " EDITOR
-set ignorecase
-set si
-set hlsearch
-set autoindent
-set cindent
-set ts=4
-set sts=4
-set shiftwidth=4
-set laststatus=4
-set backspace=eol,start,indent
-set autowrite
-set autoread
-set incsearch
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/Editor.vimrc
 
 " SMART SETTING
 source $HOME/Repositories/text-editor-settings/VimSettings/linux/SmartSettings.vimrc
