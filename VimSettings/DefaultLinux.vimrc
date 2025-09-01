@@ -1,4 +1,4 @@
-" ~/Repositories/text-editor-settings/VimSettings/DefaultLinux.vimrc
+" $HOME/Repositories/text-editor-settings/VimSettings/DefaultLinux.vimrc
 " 위 폴더 내용 source 명령어로 .vimrc 명령어에 추가
 " ==========================================
 " CLIPBOARD SETTINGS
@@ -21,64 +21,20 @@ set autowrite
 set autoread
 set incsearch
 
-
-" ==========================================
 " SMART SETTING
-set smartcase
-set smarttab
-set smartindent
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/SmartSettings.vimrc
 
-
-" ==========================================
 " STYLE
-set nu
-set ruler
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/Style.vimrc
 
-
-" ==========================================
 " FILE ENCODING
-set fileencoding=utf-8
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/FileEncoding.vimrc
 
-
-" ==========================================
 " LANGUAGE
-set enc=utf-8
-set fenc=utf-8
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/Language.vimrc
 
-
-" ==========================================
 " SYNTAX
-if has("syntax")
-	syntax on
-endif
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/Syntax.vimrc
 
-
-" ==========================================
 " vundle setting
-filetype off	" require for bundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-	" let Vundle manage Vundle
-	" required!
-	" Plugin 'plugin_to_install'
-	Plugin 'VundleVim/Vundle.vim'
-
-	Plugin 'mattn/emmet-vim'	" HTML:5 --> <CTRL> + <Y> --> <,>: html for automatically completed
-	Plugin 'alvan/vim-closetag'	" automatically close tag
-	Plugin 'preservim/nerdtree'	" show directory(:NERDTree)
-	Plugin 'rust-lang/rust.vim'	" provides Rust file detection
-					" - syntax highlighting
-					" - formatting
-					" - Syntastic integration
-					" - and more
-	Plugin 'dhruvasagar/vim-marp'
-call vundle#end()
-filetype plugin indent on	" required!
-		" Brief help
-		" :BundleList		- list configured bundles
-		" :BundleInstall(!)	- install(update) bundles
-		" :BundleSearch(!) foo	- search(or refresh cache first) for foo
-		" :BundleClean(!)
-		"
-		" see :h vundle for more details or wiki for FAQ
-		" NOTE: comments after Bundle command are not allowed...
+source $HOME/Repositories/text-editor-settings/VimSettings/linux/VundleSettings.vimrc
