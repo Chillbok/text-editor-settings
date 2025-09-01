@@ -1,4 +1,4 @@
-" ~/Repositories/text-editor-settings/Vim\ Settings/default_linux.vimrc
+" ~/Repositories/text-editor-settings/VimSettings/default_linux.vimrc
 " 위 폴더 내용 source 명령어로 .vimrc 명령어에 추가
 " ==========================================
 " CLIPBOARD SETTINGS
